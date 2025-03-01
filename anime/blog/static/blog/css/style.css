@@ -1,0 +1,206 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background: rgb(34, 34, 34);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: rgb(34, 34, 34);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+
+
+.logo img {
+    width: 120px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.search-bar {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Bạn có thể điều chỉnh độ rộng */
+    background-color: #1a1a1a; /* Nền đen */
+    border-radius: 5px;
+    padding: 5px;
+    transform: translateX(-60px);
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 35px 8px 10px; /* Thêm padding phải cho icon bên phải */
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #999; /* Chữ xám */
+    background-color: #fff; /* Nền trắng cho input */
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: #666; /* Màu icon xám */
+    cursor: pointer;
+    padding: 5px 10px;
+    border-left: 1px solid #ddd;
+}
+
+
+/* Xóa outline khi focus vào input */
+.search-bar input:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    max-width: 1048px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-grid {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.thumbnail {
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2d2c2c;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 200px; /* Tăng chiều cao để giống hình vuông hơn */
+    object-fit: cover;
+}
+
+
+.thumbnail .info {
+    padding: 10px;
+    font-size: 12px;
+    color: #bbb;
+    background: #1a1a1a;
+    text-align: center;
+}
+.thumbnail .stats {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+.thumbnail .stats i {
+    font-size: 12px;
+    margin-right: 2px;
+}
+.thumbnail .title {
+    color: #999;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.sidebar {
+    flex: 1;
+    padding-left: 20px;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.tag-btn {
+    background: #444;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #999;
+    cursor: pointer;
+    font-size: 14px;
+}
+.tag-btn:hover {
+    background: #666;
+
+}
+
+.nav-menu {
+    background: #2d2d2d;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+.nav-menu a:hover {
+    background: #444;
+}
+
+.page-nav {
+    max-width: 1048px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*  */
+
+.nav-btn {
+    display: inline-block;
+    background: #555;
+    color: #fff;
+    padding: 6px 10px;
+    margin: 3px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+    background: #777;
+}
+
+/* Nút active (trang hiện tại) */
+.nav-btn.active {
+    background: #333;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .nav-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

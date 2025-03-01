@@ -1,0 +1,42 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Upload File</title>
+{% endblock %}
+   
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/upload.css'%}">
+{% endblock %}
+
+{% block content %}
+    <form method="POST" action="" class="upload-container" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>Upload</h2>
+        <div class="input-group">
+            <label for="fileName">Tên nội dung</label>
+             {{ form.title }}
+        </div>
+        <div class="input-group">
+            <label for="description">Nội dung</label>
+             {{ form.content }}
+        </div>
+        
+        <div class="file-upload">
+            <label class="custom-file-label" for="id_image">
+                <i class="fa-solid fa-image file-icon"></i>
+                <span id="fileLabel">Chọn hoặc kéo thả hình ảnh vào đây</span>
+            </label>
+            {{ form.image }}
+        </div>
+        <script>
+            document.getElementById("id_image").addEventListener("change", function() {
+                var fileName = this.files[0] ? this.files[0].name : "Chọn hoặc kéo thả hình ảnh vào đây";
+                document.getElementById("fileLabel").textContent = fileName;
+            });
+        </script>
+
+        <button type="submit">Tải lên</button>
+    </form>
+{% endblock %}
