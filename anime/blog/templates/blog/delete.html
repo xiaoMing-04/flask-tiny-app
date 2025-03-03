@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Delete File</title>
+{% endblock %}
+   
+<!-- {% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/upload.css'%}">
+{% endblock %} -->
+
+{% block content %}
+    <form method="POST" action="">
+        {% csrf_token %}
+        <h2>Upload</h2>
+        <button type="submit">YES</button>
+        <a href="{% url 'blog:home' %}">NO</a>
+    </form>
+{% endblock %}
