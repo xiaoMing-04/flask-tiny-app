@@ -1,17 +1,47 @@
-# Dear Sunshine
+# README
 
-The way you glow through my blinds in the morning<br>
-It makes me feel like you missed me.<br>
-Kissing my forehead to help me out of bed.<br>
-Making me rub the sleepy from my eyes.<br>
+## Thông tin cá nhân
+- **Họ tên**: Nguyễn Ngọc Minh - 22685841
+- **Mã sinh viên**: Trần Khắc Liêm - 22685251
 
-Are you asking me to come out and play?<br>
-Are you trusting me to wish away a rainy day?<br>
-I look above. The sky is blue.<br>
-It's a secret, but I trust you too.<br>
+## Mô tả project
+Dự án này là một website blog cơ bản, có chức năng đăng ký, đăng nhập
 
-If it wasn't for you, I could sleep forever.<br>
-But I'm not mad.<br>
+### Tính năng dự kiến:
 
-I want breakfast.<br>
+## Hướng dẫn cài đặt và chạy
+
+### Yêu cầu hệ thống
+- Python 3.12.1
+- Django 5.0
+
+### Cài đặt
+1. Clone repo:
+   ```sh
+   git clone https://github.com/xiaoMing-04/to-thich-cau.git
+   cd anime
+   ```
+2. Tạo và kích hoạt môi trường ảo:
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # Trên macOS/Linux
+   venv\Scripts\activate  # Trên Windows
+   ```
+3. Cài đặt các package yêu cầu:
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. Chạy cơ sở dữ liệu:
+   ```sh
+   python manage.py migrate
+   ```
+5. Chạy server:
+   ```sh
+   python manage.py runserver
+   ```
+6. Truy cập trang web tại `http://127.0.0.1:8000/`
+- Trang đăng nhập: `http://127.0.0.1:8000/login`
+- Trang đăng ký: `http://127.0.0.1:8000/register`
+
+## Link project đã triển khai
 
