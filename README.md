@@ -21,30 +21,24 @@ Dự án này là một website blog cơ bản, có chức năng đăng ký, đ�
    git clone https://github.com/xiaoMing-04/flask-tiny-app.git
    cd anime
    ```
-2. Tạo và kích hoạt môi trường ảo:
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # Trên macOS/Linux
-   venv\Scripts\activate  # Trên Windows
-   ```
-3. Cài đặt các package yêu cầu:
+2. Cài đặt các package yêu cầu:
    ```sh
    pip install -r requirements.txt
    ```
-4. Chạy cơ sở dữ liệu:
+3. Chạy cơ sở dữ liệu:
    ```sh
    python manage.py migrate
    ```
-5. Chạy server:
+4. Chạy server:
    ```sh
    python manage.py runserver
    ```
-6. Tạo superuser:
+5. Tạo superuser:
    ```sh
    python manage createsuperuser
    ```
 - Truy cập liên kết: `http://127.0.0.1:8000/admin` để đăng nhập dưới quyền admin
-7. Truy cập trang web tại `http://127.0.0.1:8000/`
+6. Truy cập trang web tại `http://127.0.0.1:8000/`
 
 ## Link project đã triển khai
 
