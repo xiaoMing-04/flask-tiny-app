@@ -1,0 +1,21 @@
+<!-- templates/blog/delete_multiple.html -->
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  <h2>Xóa nhiều bài post</h2>
+  
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert {% if message.tags == 'error' %}alert-danger{% else %}alert-success{% endif %}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-danger">Xóa các bài đã chọn</button>
+    <a href="{% url 'blog:home' %}" class="btn btn-secondary">Hủy</a>
+  </form>
+{% endblock %}

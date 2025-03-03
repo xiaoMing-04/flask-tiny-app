@@ -1,0 +1,45 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Sakura - Home page</title>
+{% endblock %}
+
+{% block content %}
+    <!-- container -->
+    <div class="container detail" style="display: block;">
+        <div class="video-grid"
+            style="display: inline-block;"
+        >
+
+            <a href="{% url 'blog:update' object.pk %}">
+                <div class="thumbnail">
+                    <img src="{{ object.image.url }}" alt="thumbnail">
+                </div>
+            </a>
+        </div>
+
+        <div class="info" style="margin: 50px 0;">
+            <h1 class="title">{{ object.title }}</h1>
+            <div class="content">{{ object.content }}</div>
+            <p class="author" style="margin-top: 50px;">Published by <i>{{ object.author }}</i></p>
+            <div class="post-action">
+                <a class="update" href="{% url 'blog:update' object.pk %}">Update</a>
+                <a class="delete" href="{% url 'blog:delete' object.pk %}">Delete</a>
+            </div>
+        </div>
+
+        <div class="sidebar" style="padding: 0;">
+            <div style="margin-bottom: 20px; font-weight: 600;">Tags</div>
+            <hr style="color: #333;">
+            <div class="tags">
+                <button class="tag-btn">anime</button>
+                <button class="tag-btn">game</button>
+                <button class="tag-btn">manga</button>
+                <button class="tag-btn">vr</button>
+                <button class="tag-btn">horror</button>
+            </div>
+        </div>
+        <!--  -->
+    </div>
+{% endblock %}
