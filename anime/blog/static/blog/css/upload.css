@@ -1,0 +1,114 @@
+.upload-container {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
+
+.upload-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a2a2a2;
+}
+
+.upload-container .input-group {
+    margin-bottom: 15px;
+}
+
+.upload-container .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #a2a2a2;
+}
+
+.upload-container input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2d3a4b;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.upload-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+.upload-container .file-upload {
+    background-color: #2d3a4b;
+    border: 2px dashed #4a5b73;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.upload-container .file-upload label {
+    color: #a2a2a2;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.upload-container .file-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.upload-container .file-types {
+    display: block;
+    font-size: 12px;
+    color: #7a8a99;
+}
+
+.upload-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0a6cff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.upload-container button:hover {
+    background-color: #0056b3;
+}
+
+
+.upload-container .file-upload input[type="file"] {
+    display: none;
+}
+
+/* Tạo giao diện cho label */
+.upload-container .custom-file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed #007bff;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.upload-container .custom-file-label:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}

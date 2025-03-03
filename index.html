@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<body>
+    <form action="">
+        <label for="avatar" class="custom-file-upload"></label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+    </form>
+    
+    <style>
+        /* Ẩn input file mặc định */
+        input[type="file"] {
+            display: none;
+        }
+    
+        /* Tạo nút tùy chỉnh */
+        .custom-file-upload {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>
