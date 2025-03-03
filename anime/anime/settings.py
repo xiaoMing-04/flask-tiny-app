@@ -38,10 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
-=======
     'users.apps.UsersConfig'
->>>>>>> liem
 ]
 
 MIDDLEWARE = [
