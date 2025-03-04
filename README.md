@@ -39,7 +39,8 @@ Dự án này là một website blog cơ bản, có chức năng đăng ký, đ�
    ```
 - Truy cập liên kết: `http://127.0.0.1:8000/admin` để đăng nhập dưới quyền admin
 6. Truy cập trang web tại `http://127.0.0.1:8000/`
-7. Secret Features
+
+### Secret Features
 - I have added some secret features, I wonder if you could find it?
 
 ## Link project đã triển khai
