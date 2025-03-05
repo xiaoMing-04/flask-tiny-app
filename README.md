@@ -41,7 +41,7 @@ Dự án này là một website blog cơ bản, có chức năng đăng ký, đ�
 6. Truy cập trang web tại `http://127.0.0.1:8000/`
 
 ## Link project đã triển khai
-1. Build Docker Image
+1. Pull Docker Image
 Trước tiên, bạn cần build image từ Dockerfile:
 ```sh
 docker pull nguyenminh079/blogapp
