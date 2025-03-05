@@ -19,26 +19,23 @@ Dự án này là một website blog cơ bản, có chức năng đăng ký, đ�
 1. Clone repo:
    ```sh
    git clone https://github.com/xiaoMing-04/flask-tiny-app.git
+   pip install -r requirements.txt
    cd anime
    ```
-2. Cài đặt các package yêu cầu:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Chạy cơ sở dữ liệu:
+2. Chạy cơ sở dữ liệu:
    ```sh
    python manage.py migrate
    ```
-4. Chạy server:
+3. Chạy server:
    ```sh
    python manage.py runserver
    ```
-5. Tạo superuser:
+4. Tạo superuser:
    ```sh
    python manage createsuperuser
    ```
 - Truy cập liên kết: `http://127.0.0.1:8000/admin` để đăng nhập dưới quyền admin
-6. Truy cập trang web tại `http://127.0.0.1:8000/`
+5. Truy cập trang web tại `http://127.0.0.1:8000/`
 
 ## Link project đã triển khai
 
