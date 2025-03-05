@@ -43,5 +43,4 @@ Dự án này là một website blog cơ bản, có chức năng đăng ký, đ�
 ## Link project đã triển khai
 
 ## Secret Features
-- I have added some secret features, I wonder if you could find it?
 

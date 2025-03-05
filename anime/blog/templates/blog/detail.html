@@ -23,10 +23,12 @@
             <h1 class="title">{{ object.title }}</h1>
             <div class="content">{{ object.content }}</div>
             <p class="author" style="margin-top: 50px;">Published by <i>{{ object.author }}</i></p>
-            <div class="post-action">
-                <a class="update" href="{% url 'blog:update' object.pk %}">Update</a>
-                <a class="delete" href="{% url 'blog:delete' object.pk %}">Delete</a>
-            </div>
+            {% if user == object.author %}
+                <div class="post-action">
+                    <a class="update" href="{% url 'blog:update' object.pk %}">Update</a>
+                    <a class="delete" href="{% url 'blog:delete' object.pk %}">Delete</a>
+                </div>
+            {% endif %}
         </div>
 
         <div class="sidebar" style="padding: 0;">
