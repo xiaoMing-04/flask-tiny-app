@@ -44,10 +44,10 @@ Dự án này là một website blog cơ bản, có chức năng đăng ký, đ�
 1. Build Docker Image
 Trước tiên, bạn cần build image từ Dockerfile:
 ```sh
-docker build -t nguyenminh079/blogapp .
+docker pull nguyenminh079/blogapp
 ```
 2. Chạy Container
-Sau khi build xong, chạy container bằng lệnh:
+Pull docker image bằng lệnh:
 ```sh
 docker run -p 8888:8000 --name blogapp nguyenminh079/blogapp
 ```
