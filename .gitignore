@@ -1,1 +1,64 @@
-.DS_Store
+# Bytecode của Python  
+__pycache__/  
+*.py[cod]  
+
+# Môi trường ảo  
+venv/  
+env/  
+*.env  
+
+# Các file log  
+*.log  
+logs/  
+debug.log  
+
+# Các file cấu hình IDE  
+.vscode/  
+.idea/  
+*.iml  
+
+# Cơ sở dữ liệu SQLite  
+db.sqlite3  
+
+# Các file tĩnh được sinh ra  
+staticfiles/  
+media/  
+
+# Migrations biên dịch tự động  
+*/migrations/*.pyc  
+*/migrations/__pycache__/  
+
+# Thư mục của Docker  
+Dockerfile  
+docker-compose.yml  
+docker-compose.override.yml  
+.env  
+*.env  
+*.pid  
+
+# Thư mục chứa dữ liệu volumes  
+volumes/  
+data/  
+db_data/  
+
+# Thư mục chứa build cache  
+__pycache__/  
+*.pyc  
+*.pyo  
+*.pyd  
+
+# Thư mục chứa container logs  
+logs/  
+debug.log  
+
+# Binaries Docker  
+*.tar  
+*.img  
+
+# File hệ thống macOS  
+.DS_Store  
+.AppleDouble  
+.LSOverride  
+
+# Thư mục macOS tạo khi nén file  
+__MACOSX/  

@@ -19,25 +19,42 @@ Dự án này là một website blog cơ bản, có chức năng đăng ký, đ�
 1. Clone repo:
    ```sh
    git clone https://github.com/xiaoMing-04/flask-tiny-app.git
-   pip install -r requirements.txt
    cd anime
    ```
-2. Chạy cơ sở dữ liệu:
+2. Cài đặt thư viện cần thiết
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Chạy cơ sở dữ liệu:
    ```sh
    python manage.py migrate
    ```
-3. Chạy server:
+4. Chạy server:
    ```sh
    python manage.py runserver
    ```
-4. Tạo superuser:
+5. Tạo superuser:
    ```sh
    python manage createsuperuser
    ```
 - Truy cập liên kết: `http://127.0.0.1:8000/admin` để đăng nhập dưới quyền admin
-5. Truy cập trang web tại `http://127.0.0.1:8000/`
+6. Truy cập trang web tại `http://127.0.0.1:8000/`
 
 ## Link project đã triển khai
-
+1. Build Docker Image
+Trước tiên, bạn cần build image từ Dockerfile:
+```sh
+docker build -t nguyenminh079/blogapp .
+```
+2. Chạy Container
+Sau khi build xong, chạy container bằng lệnh:
+```sh
+docker run -p 8888:8000 --name blogapp nguyenminh079/blogapp
+```
+3. Truy cập ứng dụng
+Mở trình duyệt và truy cập vào:
+```sh
+http://localhost:8888/
+```
 ## Secret Features
 
